@@ -1,4 +1,4 @@
-body {
+.main_body {
     width: 200px;
     padding: 5px;
 }
@@ -12,3 +12,6 @@ body {
     grid-template-columns:  1fr;
     grid-gap: 0.5em;
 }
+.btn:focus {
+    outline: none;
+  }
