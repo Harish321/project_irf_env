@@ -1,0 +1,14 @@
+body {
+    width: 200px;
+    padding: 5px;
+}
+.heading-box {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.main-box{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-gap: 0.5em;
+}

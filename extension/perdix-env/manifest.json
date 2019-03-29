@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Local Perdix Env",
+    "description": "This extension changes the env of local server",
+    "version": "1.0",
+    "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png",
+      "16": "icon16.png"
+    },
+  
+    "browser_action": {
+      "default_icon": "icon16.png",
+      "default_popup": "popup.html"
+    },
+  
+    "background": {
+      "scripts": ["eventPage.js"],
+      "persistent": false
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["http://*/*"],
+        "css": ["style.css"],
+        "js":["script.js"]
+      }
+    ],
+  
+    "permissions": [
+            "storage",
+            "notifications",
+            "contextMenus",
+            "http://localhost:3000/*"
+          ]
+  
+  }
